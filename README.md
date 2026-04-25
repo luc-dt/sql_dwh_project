@@ -128,7 +128,7 @@ luc-dt_dwh_project/
 │   ├── ETL.drawio/.png                 # ETL techniques and methods reference
 │   ├── data_catalog.md                 # Column-level metadata for Gold layer
 │   ├── naming_conventions.md           # Naming rules for tables, columns, procedures
-│   └── process_dwh.md                  # Detailed DWH build process notes
+│   └── process_dwh.md                  # Detailed DWH build process notes (local only — gitignored)
 │
 ├── scripts/                            # SQL scripts for ETL pipeline
 │   ├── init_database.sql               # Create DataWarehouse DB + bronze/silver/gold schemas
@@ -182,7 +182,7 @@ luc-dt_dwh_project/
 |----------|-------------|
 | [`docs/data_catalog.md`](docs/data_catalog.md) | Column-level definitions for all Gold layer objects |
 | [`docs/naming_conventions.md`](docs/naming_conventions.md) | Naming rules for tables, views, columns, and stored procedures |
-| [`docs/process_dwh.md`](docs/process_dwh.md) | Step-by-step DWH build process and design decisions |
+| `docs/process_dwh.md` | Step-by-step DWH build process and design decisions *(local only — excluded from repo)* |
 | [`datasets/explain_dataset.md`](datasets/explain_dataset.md) | Source data dictionary, join keys, and known quality issues |
 
 ---
