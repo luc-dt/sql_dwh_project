@@ -15,7 +15,7 @@ A portfolio project demonstrating a modern data warehousing solution built with 
 | 1 | **Data Sources** | Import data from two source systems — ERP and CRM — provided as CSV files |
 | 2 | **Data Quality** | Clean and fix data quality issues before analysis |
 | 3 | **Integration** | Combine both sources into a single, analytics-ready data model |
-| 4 | **Scope** | Focus on the latest data only — no full historization required |
+| 4 | **Scope** | Focus on the latest data only — no full historization required |P
 | 5 | **Documentation** | Provide clear documentation of the data model for business users and analytical teams |
 
 ### Analytical Goals
