@@ -147,9 +147,9 @@ WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', TABLOCK);
 INSERT INTO gold.fact_sales
 SELECT
     order_number, product_key, customer_key,
-    TRY_CONVERT(date, '20' + order_date),
-    TRY_CONVERT(date, '20' + shipping_date),
-    TRY_CONVERT(date, '20' + due_date),
+    TRY_CONVERT(date, order_date,    5),
+    TRY_CONVERT(date, shipping_date, 5),
+    TRY_CONVERT(date, due_date,      5),
     sales_amount, quantity, price
 FROM #stg_fact_sales;
 GO
@@ -162,3 +162,7 @@ GO
 SELECT COUNT(*) AS dim_customers_rows FROM gold.dim_customers;
 SELECT COUNT(*) AS dim_products_rows  FROM gold.dim_products;
 SELECT COUNT(*) AS fact_sales_rows    FROM gold.fact_sales;
+
+
+
+
